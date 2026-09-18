@@ -4,7 +4,7 @@ export default function Testimonial() {
   return (
     <section className="testimonial-section">
       <h2 className="heading-section reveal-up">
-        LOVED BY<br />COFFEE LOVERS
+        LOVED BY<br />GREKO LOVERS
       </h2>
 
       <div className="testimonial-plaque-container reveal-scale delay-200">

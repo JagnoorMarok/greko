@@ -121,7 +121,7 @@ export default function Menu() {
   return (
     <section className="menu-section" id="menu">
       <div className="section-pill-badge reveal-up" style={{ margin: '0 auto 16px' }}>
-        <span>HANDCRAFTED SPECIALTY DRINKS</span>
+        <span>GREKO SIGNATURE CREATIONS</span>
       </div>
       <h2 className="heading-section reveal-up">
         FIND YOUR<br />PERFECT BREW

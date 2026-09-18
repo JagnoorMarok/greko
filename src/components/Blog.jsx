@@ -34,7 +34,7 @@ export default function Blog() {
   return (
     <section className="blog-section" id="blog">
       <h2 className="heading-section reveal-up">
-        DISCOVER THE<br />COFFEE WORLD
+        DISCOVER THE<br />GREKO WORLD
       </h2>
 
       <div className="blog-grid">

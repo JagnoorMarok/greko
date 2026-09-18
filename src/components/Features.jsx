@@ -115,7 +115,7 @@ export default function Features() {
   const milestones = [
     {
       id: 0,
-      title: "PREMIUM COFFEE BEANS",
+      title: "GREKO RESERVE BEANS",
       desc: "Carefully selected single-origin and ethically sourced beans for rich body.",
       position: "top-left",
       metric: "100% ARABICA"
@@ -153,7 +153,7 @@ export default function Features() {
         <div className="features-overlay-content">
           <div className="features-header">
             <div className="section-pill-badge reveal-up">
-              <span>OUR COMMITMENT • {scrubPercent}% BREWED</span>
+              <span>THE GREKO COMMITMENT • {scrubPercent}% BREWED</span>
             </div>
             <h2 className="heading-section reveal-up delay-100">
               EVERY CUP,<br />PERFECTLY BREWED

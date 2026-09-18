@@ -50,7 +50,7 @@ export default function Hero() {
     >
       <div className="hero-content">
         <h1 className="heading-hero">
-          YOUR DAILY<br />COFFEE RITUAL
+          YOUR DAILY<br />GREKO RITUAL
         </h1>
 
         <div className="hero-cta-group reveal-up delay-100">

@@ -45,7 +45,7 @@ export default function Header() {
               <path d="M12 4.5C11.5 6.5 12.5 8.5 12 10.5" stroke="#07162F" strokeWidth="1.2" strokeLinecap="round" />
             </svg>
           </div>
-          <span>COFFEE</span>
+          <span>GREKO</span>
         </a>
 
         {/* Desktop Navigation Links */}
@@ -88,7 +88,7 @@ export default function Header() {
         
         <div className="mobile-drawer-content">
           <div className="mobile-drawer-header">
-            <span className="mobile-drawer-brand">GREKO COFFEE</span>
+            <span className="mobile-drawer-brand">GREKO</span>
             <button 
               className="mobile-drawer-close"
               onClick={() => setMobileMenuOpen(false)}
@@ -150,7 +150,7 @@ export default function Header() {
                 className="mobile-nav-link"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <span>06</span> COFFEE JOURNAL
+                <span>06</span> GREKO JOURNAL
               </a>
             </li>
             <li>

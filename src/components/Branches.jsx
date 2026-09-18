@@ -4,7 +4,7 @@ export default function Branches() {
   const branches = [
     {
       id: 1,
-      name: "THE RESERVE COFFEE SHOP",
+      name: "GREKO RESERVE ROASTERY",
       image: "/assets/branch_reserve.jpg",
       address: "245 MADISON AVENUE",
       city: "NEW YORK, NY 10016",
@@ -15,7 +15,7 @@ export default function Branches() {
     },
     {
       id: 2,
-      name: "THE ROAST STUDIO",
+      name: "GREKO THE ROAST STUDIO",
       image: "/assets/branch_roast_studio.jpg",
       address: "742 SUNSET BOULEVARD",
       city: "LOS ANGELES, CA 90028",
