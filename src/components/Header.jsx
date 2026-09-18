@@ -35,14 +35,14 @@ export default function Header() {
           <div className="logo-icon">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
               {/* 3 Coffee Beans in flower / clover arrangement */}
-              <ellipse cx="8" cy="14" rx="4.5" ry="3.2" transform="rotate(-30 8 14)" fill="#B87945" />
-              <path d="M5.5 15.5C7 14 9 14 10.5 12.5" stroke="#07162F" strokeWidth="1.2" strokeLinecap="round" />
+              <ellipse cx="8" cy="14" rx="4.5" ry="3.2" transform="rotate(-30 8 14)" fill="#F5B82E" />
+              <path d="M5.5 15.5C7 14 9 14 10.5 12.5" stroke="#061938" strokeWidth="1.2" strokeLinecap="round" />
               
-              <ellipse cx="16" cy="14" rx="4.5" ry="3.2" transform="rotate(30 16 14)" fill="#B87945" />
-              <path d="M13.5 12.5C15 14 17 14 18.5 15.5" stroke="#07162F" strokeWidth="1.2" strokeLinecap="round" />
+              <ellipse cx="16" cy="14" rx="4.5" ry="3.2" transform="rotate(30 16 14)" fill="#F5B82E" />
+              <path d="M13.5 12.5C15 14 17 14 18.5 15.5" stroke="#061938" strokeWidth="1.2" strokeLinecap="round" />
               
-              <ellipse cx="12" cy="7.5" rx="3.2" ry="4.5" fill="#B87945" />
-              <path d="M12 4.5C11.5 6.5 12.5 8.5 12 10.5" stroke="#07162F" strokeWidth="1.2" strokeLinecap="round" />
+              <ellipse cx="12" cy="7.5" rx="3.2" ry="4.5" fill="#F5B82E" />
+              <path d="M12 4.5C11.5 6.5 12.5 8.5 12 10.5" stroke="#061938" strokeWidth="1.2" strokeLinecap="round" />
             </svg>
           </div>
           <span>GREKO</span>

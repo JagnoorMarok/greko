@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 
 export default function Footer() {
   const tickerItems = [
-    "AMERICANO", "CAPPUCCINO", "LATTE", "FLAT WHITE", 
+    "AMERICANO", "CAPPUCCINO", "LATTE", "FLAT WHITE",
     "MACCHIATO", "MOCHA", "AFFOGATO", "CORTADO", "COLD BREW", "ESPRESSO"
   ];
 
@@ -43,24 +43,24 @@ export default function Footer() {
     <footer className="site-footer" id="contact">
       {/* Top S-Curved Ribbon Ticker */}
       <div className="footer-curved-ticker-wrap">
-        <svg 
-          viewBox="0 0 1800 320" 
-          className="curved-ribbon-svg" 
+        <svg
+          viewBox="0 0 1800 320"
+          className="curved-ribbon-svg"
           preserveAspectRatio="xMidYMid meet"
         >
           <defs>
             <linearGradient id="footerRibbonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#07162F" stopOpacity="0.9" />
-              <stop offset="20%" stopColor="#0F2345" stopOpacity="0.98" />
-              <stop offset="50%" stopColor="#1C355E" stopOpacity="1" />
-              <stop offset="80%" stopColor="#0F2345" stopOpacity="0.98" />
-              <stop offset="100%" stopColor="#07162F" stopOpacity="0.9" />
+              <stop offset="0%" stopColor="#061938" stopOpacity="0.92" />
+              <stop offset="20%" stopColor="#0D2C5E" stopOpacity="0.98" />
+              <stop offset="50%" stopColor="#184C98" stopOpacity="1" />
+              <stop offset="80%" stopColor="#0D2C5E" stopOpacity="0.98" />
+              <stop offset="100%" stopColor="#061938" stopOpacity="0.92" />
             </linearGradient>
 
             {/* Dynamic S-Curve Path undulating across the footer */}
-            <path 
-              id="footerSCurvePath" 
-              d="M -150,60 C 250,300 650,-20 950,160 C 1280,320 1650,-10 2000,160" 
+            <path
+              id="footerSCurvePath"
+              d="M -150,60 C 250,300 650,-20 950,160 C 1280,320 1650,-10 2000,160"
             />
           </defs>
 
@@ -70,35 +70,35 @@ export default function Footer() {
           </filter>
 
           {/* Golden Outer Border Outline */}
-          <use 
-            href="#footerSCurvePath" 
-            fill="none" 
-            stroke="rgba(184, 121, 69, 0.6)" 
-            strokeWidth="86" 
+          <use
+            href="#footerSCurvePath"
+            fill="none"
+            stroke="rgba(245, 184, 46, 0.7)"
+            strokeWidth="86"
             filter="url(#footerSRibbonShadow)"
           />
 
           {/* Deep Navy Ribbon Solid Body */}
-          <use 
-            href="#footerSCurvePath" 
-            fill="none" 
-            stroke="url(#footerRibbonGrad)" 
-            strokeWidth="80" 
+          <use
+            href="#footerSCurvePath"
+            fill="none"
+            stroke="url(#footerRibbonGrad)"
+            strokeWidth="80"
           />
 
           {/* Subtle Center Guide Highlight */}
-          <use 
-            href="#footerSCurvePath" 
-            fill="none" 
-            stroke="rgba(255, 255, 255, 0.08)" 
-            strokeWidth="2" 
+          <use
+            href="#footerSCurvePath"
+            fill="none"
+            stroke="rgba(255, 255, 255, 0.08)"
+            strokeWidth="2"
           />
 
           {/* Text Marquee Flowing Along the S-Curve */}
           <text className="curved-ribbon-text" dy="7">
-            <textPath 
-              ref={footerTextPathRef} 
-              href="#footerSCurvePath" 
+            <textPath
+              ref={footerTextPathRef}
+              href="#footerSCurvePath"
               startOffset="0px"
             >
               {repeatedText}
@@ -120,8 +120,8 @@ export default function Footer() {
 
         {/* Center Blue Greko Cup Illustration with Splash (Transparent) */}
         <div className="footer-center-cup-wrap">
-          <img 
-            src="/assets/greko_cup_splash.png" 
+          <img
+            src="/assets/greko_cup_splash.png"
             alt="Blue Greko Coffee Cup with Splash"
             style={{ width: '100%', height: 'auto', filter: 'drop-shadow(0 15px 30px rgba(0,0,0,0.7))' }}
             loading="lazy"
@@ -138,41 +138,7 @@ export default function Footer() {
       </div>
 
       {/* Newsletter Signup: Join God's Own Coffee Club */}
-      <div className="footer-newsletter-wrap">
-        <div className="newsletter-card">
-          <div className="newsletter-header">
-            <span className="newsletter-badge">THE INNER CIRCLE</span>
-            <h3 className="newsletter-title">JOIN THE GREKO COFFEE CLUB</h3>
-            <p className="newsletter-desc">
-              Receive private single-origin micro-lot releases, home-brewing masterclasses, and secret tasting invites.
-            </p>
-          </div>
 
-          {isSubscribed ? (
-            <div className="newsletter-success">
-              <span className="success-icon">✓</span>
-              <span>WELCOME TO THE CIRCLE. YOUR EXCLUSIVE WELCOME GIFT HAS BEEN SENT.</span>
-            </div>
-          ) : (
-            <form className="newsletter-form" onSubmit={handleSubscribe}>
-              <input 
-                type="email" 
-                placeholder="ENTER YOUR EMAIL FOR PRIVATE ACCESS..." 
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                className="newsletter-input"
-              />
-              <button type="submit" className="newsletter-btn" aria-label="Subscribe to GREKO Coffee Club">
-                <span>JOIN NOW</span>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                  <path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </button>
-            </form>
-          )}
-        </div>
-      </div>
 
       {/* Sub Bar */}
       <div className="footer-sub-bar">

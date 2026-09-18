@@ -131,7 +131,7 @@ export default function Gallery() {
           if (!el) return;
           const theta = (index / total) * 360 + currentAngle;
           const isCurrentActive = index === activeIndex;
-          
+
           el.style.transform = `rotate(${theta}deg) translateX(${radius}px) rotate(${-theta}deg)`;
           el.style.zIndex = isCurrentActive ? '30' : '10';
         });
@@ -151,7 +151,7 @@ export default function Gallery() {
 
       const currentScroll = -rect.top;
       const progress = Math.min(Math.max(currentScroll / totalScrollable, 0), 1);
-      
+
       // Calculate closest index from scroll progress
       const scrollIndex = Math.min(total - 1, Math.floor(progress * total));
       targetAngle = -progress * 180 - (activeIndex * 10);
@@ -171,17 +171,7 @@ export default function Gallery() {
     <div ref={containerRef} className="gallery-scroll-track" id="gallery">
       <div className="gallery-sticky-viewport">
         {/* Section Header */}
-        <div className="gallery-header">
-          <div className="section-pill-badge reveal-up">
-            <span>THE GREKO ATMOSPHERE • {activeIndex + 1} / {total}</span>
-          </div>
-          <h2 className="heading-section heading-section-light reveal-up delay-100">
-            CRAFTED FOR<br />EVERY MOMENT
-          </h2>
-          <p className="gallery-subtitle reveal-up delay-200">
-            Swipe or rotate through our signature roasting studios & espresso lounges.
-          </p>
-        </div>
+
 
         {/* Desktop Revolving Orbit Experience */}
         <div className="gallery-orbit-stage gallery-desktop-stage">
@@ -213,7 +203,7 @@ export default function Gallery() {
                   ref={(el) => (itemsRef.current[index] = el)}
                   className={`gallery-orbit-item ${isSelected ? 'is-active-item' : ''}`}
                 >
-                  <div 
+                  <div
                     className={`gallery-orbit-card ${isSelected ? 'is-card-selected' : ''}`}
                     onClick={() => {
                       setActiveIndex(index);
@@ -240,7 +230,7 @@ export default function Gallery() {
         </div>
 
         {/* Mobile Creative 3D Coverflow Card Deck */}
-        <div 
+        <div
           className="gallery-mobile-deck"
           onTouchStart={onTouchStart}
           onTouchMove={onTouchMove}
@@ -254,7 +244,7 @@ export default function Gallery() {
               else if (position === 1 || position === total - 1) cardClass = position === 1 ? 'deck-card-next' : 'deck-card-prev';
 
               return (
-                <div 
+                <div
                   key={item.id}
                   className={`deck-card ${cardClass}`}
                   onClick={() => {
@@ -282,8 +272,8 @@ export default function Gallery() {
 
         {/* Navigation Controls Bar (Works on Desktop & Mobile) */}
         <div className="gallery-nav-controls">
-          <button 
-            className="gallery-arrow-btn" 
+          <button
+            className="gallery-arrow-btn"
             onClick={prevSlide}
             aria-label="Previous moment"
           >
@@ -303,8 +293,8 @@ export default function Gallery() {
             ))}
           </div>
 
-          <button 
-            className="gallery-arrow-btn" 
+          <button
+            className="gallery-arrow-btn"
             onClick={nextSlide}
             aria-label="Next moment"
           >
@@ -318,17 +308,17 @@ export default function Gallery() {
 
       {/* Interactive Lightbox / Detail Modal */}
       {selectedMoment && (
-        <div 
-          className="luxury-modal-backdrop" 
+        <div
+          className="luxury-modal-backdrop"
           onClick={() => setSelectedMoment(null)}
           role="dialog"
           aria-modal="true"
         >
-          <div 
-            className="luxury-modal-card" 
+          <div
+            className="luxury-modal-card"
             onClick={(e) => e.stopPropagation()}
           >
-            <button 
+            <button
               className="modal-close-btn"
               onClick={() => setSelectedMoment(null)}
               aria-label="Close dialog"
@@ -338,9 +328,9 @@ export default function Gallery() {
 
             <div className="modal-content-grid">
               <div className="modal-img-column">
-                <img 
-                  src={selectedMoment.src} 
-                  alt={selectedMoment.title} 
+                <img
+                  src={selectedMoment.src}
+                  alt={selectedMoment.title}
                   className="modal-primary-img"
                 />
                 <span className="modal-tag-pill">{selectedMoment.tag}</span>
@@ -370,8 +360,8 @@ export default function Gallery() {
                 </div>
 
                 <div className="modal-footer-cta">
-                  <a 
-                    href="#menu" 
+                  <a
+                    href="#menu"
                     className="btn-action"
                     onClick={() => setSelectedMoment(null)}
                   >

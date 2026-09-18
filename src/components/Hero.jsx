@@ -93,11 +93,11 @@ export default function Hero() {
             >
               <defs>
                 <linearGradient id="heroRibbonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stopColor="#07162F" stopOpacity="0.9" />
-                  <stop offset="20%" stopColor="#0F2345" stopOpacity="0.98" />
-                  <stop offset="50%" stopColor="#1C355E" stopOpacity="1" />
-                  <stop offset="80%" stopColor="#0F2345" stopOpacity="0.98" />
-                  <stop offset="100%" stopColor="#07162F" stopOpacity="0.9" />
+                  <stop offset="0%" stopColor="#061938" stopOpacity="0.92" />
+                  <stop offset="20%" stopColor="#0D2C5E" stopOpacity="0.98" />
+                  <stop offset="50%" stopColor="#184C98" stopOpacity="1" />
+                  <stop offset="80%" stopColor="#0D2C5E" stopOpacity="0.98" />
+                  <stop offset="100%" stopColor="#061938" stopOpacity="0.92" />
                 </linearGradient>
 
                 {/* Pronounced S-Curve Path with balanced vertical bounds */}
@@ -116,7 +116,7 @@ export default function Hero() {
               <use 
                 href="#heroSCurvePath" 
                 fill="none" 
-                stroke="rgba(184, 121, 69, 0.6)" 
+                stroke="rgba(245, 184, 46, 0.7)" 
                 strokeWidth="88" 
                 filter="url(#sRibbonShadow)"
               />
